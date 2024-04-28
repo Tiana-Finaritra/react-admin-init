@@ -7,6 +7,7 @@ import {
 } from "react-admin";
 import { dataProvider } from "./dataProvider";
 import { PostList } from "./Posts";
+import { CommentList } from "./Comments";
 
 export const App = () => (
   <Admin dataProvider={dataProvider}>
@@ -17,5 +18,6 @@ export const App = () => (
       show={ShowGuesser}
     />
     <Resource name="posts" list={PostList} />
+    <Resource name="comments" list={CommentList} />
   </Admin>
 );
