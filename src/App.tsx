@@ -8,6 +8,7 @@ import {
 import { dataProvider } from "./dataProvider";
 import { PostList } from "./Posts";
 import { CommentList } from "./Comments";
+import { PostEdit } from "./PostEdit";
 
 export const App = () => (
   <Admin dataProvider={dataProvider}>
@@ -18,6 +19,7 @@ export const App = () => (
       show={ShowGuesser}
     />
     <Resource name="posts" list={PostList} />
+    <Resource name="posts" list={PostList} edit={PostEdit} />
     <Resource name="comments" list={CommentList} />
   </Admin>
 );
